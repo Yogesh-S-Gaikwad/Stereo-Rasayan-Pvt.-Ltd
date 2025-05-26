@@ -1,123 +1,253 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
 .navbar{
-    background-color: #E0F7F7;
-    flex-wrap: nowrap !important;
-    justify-content: space-between !important;
+  background: #E0F7F7;;
 }
-.navbar-brand{
-    width: 59.265px;
-    height: 65.133px;
-    margin-left: 89px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.brand-logo {
+  width: 60px;
+  height: auto;
+  margin-left: 89px;
 }
-.nav-links{
-   list-style: none;
-    display: flex;       
-    width: 1701px;
-    margin-right: 86px;
-    
+.navbar-nav{
+ gap: 48px;
+margin-right: 89px;
 }
-.nav-link{
-    color: #575757 !important;
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 0;
-}
-.nav-link:hover{
-    color: black !important;
-    stroke: black !important;
-}
-/*--------for mobile ----------*/
-.menu-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: none; 
-  position: absolute;
-  right: 20px;
+.navbar-nav .nav-link {
+  color: #575757;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s;
 }
 
-.mobile-nav {
-  display: none;
-  flex-direction: column;
-  list-style: none;
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 100;
-  gap: 10px;
+.navbar-nav .nav-link:hover {
+  color: #000;
 }
 
-.mobile-nav li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;}
-
-/* When active (JS toggle) */
-.mobile-nav.active {
+@media (max-width: 768px) {
+  #mainNav {
+    background-color: #e0f7f7;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+  }
+}
+.hero-sec {
+  height: 700px;
+  background-image: url("images/Frame\ 1704.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+}
+.hero-sec1{
+  height: 100%;
   display: flex;
 }
-
-.first-container{
-    height: 694px;
-    width: auto;
- background-image: url('images/Frame\ 1704.jpg');
-  background-size: cover;      
-  background-position: center;  
-  background-repeat: no-repeat; 
-  position: relative;
+.left-text{
+  font-size: 48px;
+  margin-top: 42px;
 }
+.left-text2{
+  font-size: 24px;
+  margin-top: 20px;
+}
+.hero-sec-btns{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 61px;
+}
+.req-quote,
+.exp-product {
+  display: flex;
+  width: 259px;
+  height: 60px;
+  padding: 8px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background: #ffd166;
+  color: #2A8080;
+  border:transparent;
+  font-weight: 600;
+}
+.req-quote:hover{
+  color: white;
+}
+.exp-product:hover{
+  color: white;
+}
+
 .right-img{
-   background-image: url('images/first_cont_img.png');
-   z-index: 1;
-  background-size: cover;      
-  background-position: center;  
-  background-repeat: no-repeat;
-  height: 643px;
+  display: flex;
+  align-items: end;
+}
+
+.section-image {
   width: 643px;
-  position: absolute;
-  right: 0;
+  height: 643px;
+  position: relative;
   bottom: 0;
 }
+.logo-slider {
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+}
 
+.slider-track {
+  display: flex;
+  width: max-content;
+  height: 54px;
+  animation: scrollLeft 20s linear infinite;
+  display: flex;
+  flex-direction: row;
+}
 
+.slide-item {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 48px;
+}
 
+.slide-item svg {
+  width: 52px;
+  height: 50px;
+}
 
+.slide-item p {
+  margin-top: 10px;
+  color: #2A8080;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 48px;
 
+}
+.vertical-line {
+  width: 1px;
+  height: 48px;
+  background-color: #2A8080;
+  margin-right: 48px;
+}
+.who-we-are-card {
+  position: relative;
+  padding: 54px 77px 80px 77px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 41px;
+  margin-bottom: 60px;
+}
+.who-we-are-card h2,p{
+  text-align: center;
+}
+.who-we-are-card h2{
+color: #333;
+text-align: center;
+font-size: 32px;
+font-weight: 600;
+}
+.who-we-are-card p{
+  color: #000;
+text-align: center;
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+align-self: stretch;
+}
+.btn-know-more{
+  border-radius: 30px;
+  background: #2A8080;
+  width: 193px;
+  height: 60px;
+  padding: 8px 30px;
+  border: transparent;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+   position: absolute;
+  bottom: 20px;
+  right: 30px;
 
+}
 
-/* Responsive (Mobile) */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none; 
+/*scroll bar */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
   }
-  .menu-toggle {
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+ 
+  .navbar-brand {
+    
+  margin-left: 15%;
+
+  }
+  .left-col {
+    padding-left: 24px;
+  }
+  .left-text{
+    font-size: 24px;
+    padding-right: 30%;
+  }
+  .left-text2{
+    font-size: 14px;
+    margin-right: 55%;
+  }
+  .hero-sec-btns{
+    margin-top: 25px;
+    gap: 20px;
+    flex-direction: column;
+ 
+  }
+  .req-quote,
+  .exp-product{
+    width: 188px;
+    height: 40px;
+}
+  .hero-sec {
+    background-image: url(images/hero-page-mobile.jpg);
+    height: 756px;
+
+  } 
+  .section-image{
+  width: 377px;
+  height: 377px;
+  right: -70px;
+  } 
+
+  .slide-item {
+    margin: 0 15px;
+  }
+  .slide-item p {
+    font-size: 14px;
+  }
+
+  .who-we-are-card {
+    padding: 30px 20px;
+    min-height: auto;
+    margin: 24px;
+  }
+
+  .btn-know-more {
+    position: static;
+    margin: 30px auto 0 auto;
     display: block;
   }
-.mobile-nav {
-    display: none;
 }
-.navbar{
-    justify-content: center !important;
-   height: 96px;   
-}
-.container-fluid{
-    justify-content: center !important;
-}
-.navbar-brand{
-    margin: 0;
-    left: 50px;
-}
-}
-@media (max-width: 1024px) {
-.nav-links{
-    width: 3500px;
-}
-
-}
-
