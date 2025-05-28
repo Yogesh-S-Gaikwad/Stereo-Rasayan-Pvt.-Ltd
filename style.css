@@ -158,7 +158,7 @@ font-size: 32px;
 font-weight: 600;
 }
 .who-we-are-card p{
-  color: #000;
+color: #000;
 text-align: center;
 font-size: 14px;
 font-weight: 400;
@@ -179,6 +179,61 @@ align-self: stretch;
   bottom: 20px;
   right: 30px;
 
+}
+/* section3 */
+
+ .heding-our-spl{
+    color: #333;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+  }
+.card{
+  display: flex;
+  flex-direction: row;
+  border-radius: 30px;
+  background: #E0F7F7;
+  height: 224px;
+  margin-top: 21px;
+}
+.card-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+.card-left svg{
+  margin-left: 48px;
+}
+.vertical-line2 {
+  width: 2px;
+  height: 48px;
+  background-color: #2A8080;
+}
+.card-right{
+  position: relative;
+ 
+}
+.card-right-text{
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 35px;
+  text-align: left;
+   margin-right: 37px;
+}
+.btn-exp-pro{
+width: 259px;
+height: 60px;
+padding: 8px 30px;
+border-radius: 30px;
+background: #2A8080;
+color: white;
+border: transparent;
+font-size: 18px;
+font-weight: 600;
+position: absolute;
+right: 0;
+ margin-right: 37px;
 }
 
 /*scroll bar */
@@ -239,15 +294,61 @@ align-self: stretch;
     font-size: 14px;
   }
 
-  .who-we-are-card {
-    padding: 30px 20px;
-    min-height: auto;
-    margin: 24px;
+  .who-we-are-card{
+    width: 393px;
+    padding: 58px 9px;
+  }
+  .who-we-are-card h2{
+    font-size: 18px;
+  }
+  .who-we-are-card p{
+    font-size: 12px;
+    font-weight: 400;
   }
 
   .btn-know-more {
     position: static;
-    margin: 30px auto 0 auto;
+    margin: 30px auto 58px auto;
     display: block;
   }
+   .heding-our-spl{
+    font-size: 18px;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+    height: auto;
+    padding: 24px 39px;
+  }
+ 
+  .card-left{
+    flex-direction: column;
+  }
+  .card svg{
+    margin: 0%;
+  }
+  .vertical-line2{
+     width: 201px;
+  height: 2px;
+  }
+  .card-right-text{
+    margin: 0;
+      font-size: 12px;
+      text-align: center;
+  }
+  .btn-exp-pro{
+    position:relative;
+    margin: 18px auto 0 auto !important;
+    width: 188px;
+height: 40px;
+font-size: 14px;
+  }
+  .card-right{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
 }
+
