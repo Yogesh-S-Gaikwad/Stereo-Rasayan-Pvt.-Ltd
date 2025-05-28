@@ -1,17 +1,24 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-.navbar{
-  background: #E0F7F7;;
+.sec-navbar {
+  background: #e0f7f7;
+}
+.navbar {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .brand-logo {
   width: 60px;
   height: auto;
   margin-left: 89px;
 }
-.navbar-nav{
- gap: 48px;
-margin-right: 89px;
+.navbar-brand-mobile {
+  display: none;
+}
+.navbar-nav {
+  gap: 48px;
+  margin-right: 89px;
 }
 .navbar-nav .nav-link {
   color: #575757;
@@ -34,26 +41,27 @@ margin-right: 89px;
 }
 .hero-sec {
   height: 700px;
-  background-image: url("images/Frame\ 1704.jpg");
-  background-size:cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #2a8080;
   position: relative;
   color: white;
 }
-.hero-sec1{
+.hero-sec1 {
   height: 100%;
   display: flex;
+  background-image: url("images/Frame\ 1704.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.left-text{
+.left-text {
   font-size: 48px;
   margin-top: 42px;
 }
-.left-text2{
+.left-text2 {
   font-size: 24px;
   margin-top: 20px;
 }
-.hero-sec-btns{
+.hero-sec-btns {
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -70,20 +78,28 @@ margin-right: 89px;
   gap: 10px;
   border-radius: 30px;
   background: #ffd166;
-  color: #2A8080;
-  border:transparent;
+  color: #2a8080;
+  border: transparent;
   font-weight: 600;
 }
-.req-quote:hover{
+.req-quote:hover {
   color: white;
 }
-.exp-product:hover{
+.exp-product:hover {
   color: white;
 }
 
-.right-img{
+.right-img {
   display: flex;
   align-items: end;
+}
+.img-hero {
+  background-image: url(images/first_cont_img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 643px;
+  height: 643px;
 }
 
 .section-image {
@@ -94,6 +110,8 @@ margin-right: 89px;
 }
 .logo-slider {
   height: 150px;
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
   position: relative;
   background: #f1f1f1;
@@ -127,16 +145,15 @@ margin-right: 89px;
 
 .slide-item p {
   margin-top: 10px;
-  color: #2A8080;
+  color: #2a8080;
   font-size: 18px;
   font-weight: 600;
   margin-right: 48px;
-
 }
 .vertical-line {
   width: 1px;
   height: 48px;
-  background-color: #2A8080;
+  background-color: #2a8080;
   margin-right: 48px;
 }
 .who-we-are-card {
@@ -148,94 +165,137 @@ margin-right: 89px;
   margin-top: 41px;
   margin-bottom: 60px;
 }
-.who-we-are-card h2,p{
+.who-we-are-card h2,
+p {
   text-align: center;
 }
-.who-we-are-card h2{
-color: #333;
-text-align: center;
-font-size: 32px;
-font-weight: 600;
+.who-we-are-card h2 {
+  color: #333;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
 }
-.who-we-are-card p{
-color: #000;
-text-align: center;
-font-size: 14px;
-font-weight: 400;
-line-height: 16px;
-align-self: stretch;
+.who-we-are-card p {
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  align-self: stretch;
 }
-.btn-know-more{
+.btn-know-more {
   border-radius: 30px;
-  background: #2A8080;
+  background: #2a8080;
   width: 193px;
   height: 60px;
   padding: 8px 30px;
   border: transparent;
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   font-weight: 600;
-   position: absolute;
+  position: absolute;
   bottom: 20px;
   right: 30px;
-
 }
 /* section3 */
 
- .heding-our-spl{
-    color: #333;
-    font-size: 32px;
-    font-weight: 600;
-    text-align: left;
-  }
-.card{
+.heding-our-spl {
+  color: #333;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: left;
+}
+.card {
   display: flex;
   flex-direction: row;
   border-radius: 30px;
-  background: #E0F7F7;
+  background: #e0f7f7;
   height: 224px;
   margin-top: 21px;
 }
-.card-left{
+.card-left {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 24px;
 }
-.card-left svg{
+.card-left svg {
   margin-left: 48px;
 }
 .vertical-line2 {
   width: 2px;
   height: 48px;
-  background-color: #2A8080;
+  background-color: #2a8080;
 }
-.card-right{
+.card-right {
   position: relative;
- 
 }
-.card-right-text{
+.card-right-text {
   font-size: 18px;
   font-weight: 400;
   margin-top: 35px;
   text-align: left;
-   margin-right: 37px;
+  margin-right: 37px;
 }
-.btn-exp-pro{
-width: 259px;
-height: 60px;
-padding: 8px 30px;
-border-radius: 30px;
-background: #2A8080;
-color: white;
-border: transparent;
-font-size: 18px;
-font-weight: 600;
-position: absolute;
-right: 0;
- margin-right: 37px;
+.btn-exp-pro {
+  width: 259px;
+  height: 60px;
+  padding: 8px 30px;
+  border-radius: 30px;
+  background: #2a8080;
+  color: white;
+  border: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  margin-right: 37px;
 }
 
+/* section why choose us */
+.why-choose-us {
+  background-color: #ffd166;
+  margin-top: 120px;
+}
+.section4 {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding:0 60px; */
+}
+.sec4-hedding {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 49px 0px 0px 72px;
+}
+.sec4-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.sec4-card {
+  padding: 35px 35px 10px 95px;
+}
+.sec4-icons {
+  display: contents;
+}
+.text-area {
+  margin-left: 15px;
+}
+.text-area h6 {
+  font-size: 24px;
+  font-weight: 600;
+  padding-right: 60px;
+}
+.text-area p {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 16px;
+  padding-right: 70px;
+}
+.sec4-card:hover {
+  background: #6ecb63;
+}
 /*scroll bar */
 @keyframes scrollLeft {
   0% {
@@ -248,44 +308,57 @@ right: 0;
 
 /* Responsive */
 @media (max-width: 768px) {
- 
-  .navbar-brand {
-    
-  margin-left: 15%;
-
+  .navbar-nav {
+    gap: 0;
+  }
+  .navbar-brand-mobile {
+    display: flex;
+  }
+  .brand-logo {
+    display: none;
+  }
+  .brand-logo-m {
+    margin-left: 60px;
   }
   .left-col {
     padding-left: 24px;
   }
-  .left-text{
+  .left-text {
     font-size: 24px;
     padding-right: 30%;
   }
-  .left-text2{
+  .left-text2 {
     font-size: 14px;
     margin-right: 55%;
   }
-  .hero-sec-btns{
+  .hero-sec-btns {
     margin-top: 25px;
     gap: 20px;
     flex-direction: column;
- 
   }
   .req-quote,
-  .exp-product{
+  .exp-product {
     width: 188px;
     height: 40px;
-}
+  }
   .hero-sec {
     background-image: url(images/hero-page-mobile.jpg);
     height: 756px;
-
-  } 
-  .section-image{
-  width: 377px;
-  height: 377px;
-  right: -70px;
-  } 
+  }
+  .img-hero {
+    background-image: url(images/first_cont_img\ -\ Copy.png);
+    width: 323px;
+    height: 377px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+  }
+  /* .section-image{
+    width: 323px;
+    height: 377px;
+  }  */
 
   .slide-item {
     margin: 0 15px;
@@ -294,14 +367,14 @@ right: 0;
     font-size: 14px;
   }
 
-  .who-we-are-card{
-    width: 393px;
+  .who-we-are-card {
+    /* width: 393px; */
     padding: 58px 9px;
   }
-  .who-we-are-card h2{
+  .who-we-are-card h2 {
     font-size: 18px;
   }
-  .who-we-are-card p{
+  .who-we-are-card p {
     font-size: 12px;
     font-weight: 400;
   }
@@ -311,44 +384,72 @@ right: 0;
     margin: 30px auto 58px auto;
     display: block;
   }
-   .heding-our-spl{
+  .heding-our-spl {
     font-size: 18px;
   }
-  .card{
+  .card {
     display: flex;
     flex-direction: column;
-    width: 345px;
     height: auto;
     padding: 24px 39px;
   }
- 
-  .card-left{
+
+  .card-left {
     flex-direction: column;
   }
-  .card svg{
+  .card svg {
     margin: 0%;
   }
-  .vertical-line2{
-     width: 201px;
-  height: 2px;
+  .vertical-line2 {
+    width: 201px;
+    height: 2px;
   }
-  .card-right-text{
+  .card-right-text {
     margin: 0;
-      font-size: 12px;
-      text-align: center;
+    font-size: 12px;
+    text-align: center;
   }
-  .btn-exp-pro{
-    position:relative;
+  .btn-exp-pro {
+    position: relative;
     margin: 18px auto 0 auto !important;
     width: 188px;
-height: 40px;
-font-size: 14px;
+    height: 40px;
+    font-size: 14px;
   }
-  .card-right{
+  .card-right {
     display: flex;
     flex-direction: column;
-    
   }
-
+  .sec4-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 8px 14px 28px;
+  }
+  .sec4-cards{
+    margin-right: 20px;
+  }
+  .sec4-hedding{
+    padding: 25px;
+    text-align: center;
+  }
+  .text-area h6 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 60px;
+  }
+  .text-area p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 16px;
+    padding-right: 0;
+  }
+  .sec4-icons {
+    display: none;
+  }
+  .sec4-hedding {
+    font-size: 24px;
+  }
 }
-
