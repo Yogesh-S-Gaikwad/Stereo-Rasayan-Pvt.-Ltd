@@ -142,7 +142,6 @@ body {
   width: 52px;
   height: 50px;
 }
-
 .slide-item p {
   margin-top: 10px;
   color: #2a8080;
@@ -296,6 +295,67 @@ p {
 .sec4-card:hover {
   background: #6ecb63;
 }
+
+/* -----------Testimonials ----------*/
+
+.testimoniales{
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.test-card{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 150px;
+}
+.test-img-left{
+  width: 194px;
+  height: 194px;
+  border-radius: 50%;
+  background-image: url(images/testi-img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -100px;
+  margin-left: 35%;
+  background-color:white;
+}
+.test-text{
+  width: 667px;
+  height: 261px;
+  background: #E0F7F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.test-text2{
+  width: 667px;
+  height: 261px;
+   background-color: #ffd166;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.sec-faq{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+}
+.sec-faq-link{
+  color: #000;
+  display: block;
+  text-decoration: none;
+}
+.horizotal-line{
+  height: 1.2px;
+  background-color: #000;
+  width: 100%;
+  margin: 25px 0px;
+}
+
 /*scroll bar */
 @keyframes scrollLeft {
   0% {
