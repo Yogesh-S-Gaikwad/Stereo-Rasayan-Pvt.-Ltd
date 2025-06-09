@@ -1,15 +1,16 @@
- const toggleBtn = document.getElementById('mobile-toggle');
-  const mobileNav = document.getElementById('mobile-nav');
+window.onload = function () {
 
-  toggleBtn.addEventListener('click ', () => {
-    mobileNav.classList.toggle('active');
-  });
-
-  function subscribe() {
-      const email = document.getElementById('emailInput').value;
-      if (email) {
-        alert("Thank you for subscribing: " + email);
-      } else {
-        alert("Please enter a valid email.");
-      }
+ window.subscribe = function() {
+    const email = document.getElementById('emailInput').value;
+    if (email) {
+      alert("Thank you for subscribing: " + email);
+    } else {
+      alert("Please enter a valid email.");
     }
+  };
+
+  window.toggleFaq = function(anchor) {
+    const answer = anchor.nextElementSibling;
+    answer.classList.toggle('show');
+  };
+};

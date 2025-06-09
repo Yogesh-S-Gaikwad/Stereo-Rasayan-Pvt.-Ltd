@@ -22,7 +22,7 @@ body {
 }
 .navbar-nav .nav-link {
   color: #575757;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   padding: 0.5rem 1rem;
   transition: color 0.2s;
@@ -31,16 +31,8 @@ body {
 .navbar-nav .nav-link:hover {
   color: #000;
 }
-
-@media (max-width: 768px) {
-  #mainNav {
-    background-color: #e0f7f7;
-    padding: 1rem;
-    border-radius: 0 0 8px 8px;
-  }
-}
 .hero-sec {
-  height: 700px;
+  min-height: 700px;
   background-color: #2a8080;
   position: relative;
   color: white;
@@ -145,7 +137,7 @@ body {
 .slide-item p {
   margin-top: 10px;
   color: #2a8080;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   margin-right: 48px;
 }
@@ -165,7 +157,7 @@ body {
   margin-bottom: 60px;
 }
 .who-we-are-card h2,
-p {
+.who-we-are-card p {
   text-align: center;
 }
 .who-we-are-card h2 {
@@ -190,7 +182,7 @@ p {
   padding: 8px 30px;
   border: transparent;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   position: absolute;
   bottom: 20px;
@@ -209,8 +201,9 @@ p {
   flex-direction: row;
   border-radius: 30px;
   background: #e0f7f7;
-  height: 224px;
+  min-height: 224px;
   margin-top: 21px;
+  position: relative;
 }
 .card-left {
   display: flex;
@@ -230,7 +223,7 @@ p {
   position: relative;
 }
 .card-right-text {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   margin-top: 35px;
   text-align: left;
@@ -244,11 +237,8 @@ p {
   background: #2a8080;
   color: white;
   border: transparent;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
-  position: absolute;
-  right: 0;
-  margin-right: 37px;
 }
 
 /* section why choose us */
@@ -320,7 +310,6 @@ p {
   background-repeat: no-repeat;
   position: absolute;
   top: -100px;
-  margin-left: 35%;
   background-color: white;
 }
 .test-text {
@@ -330,6 +319,10 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  text-align: center;
+}
+.text-msg{
+  margin: 25px;
 }
 .test-text2 {
   width: 667px;
@@ -338,7 +331,14 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  text-align: center;
 }
+ .testi-name{
+    font-weight: 600;
+  }
+  .faq-item{
+    width: 100%;
+  }
 .sec-faq {
   display: flex;
   flex-direction: column;
@@ -349,6 +349,7 @@ p {
   color: #000;
   display: block;
   text-decoration: none;
+  text-align: center;
 }
 .horizotal-line {
   height: 1.2px;
@@ -356,6 +357,20 @@ p {
   width: 100%;
   margin: 25px 0px;
 }
+.faq-answer {
+  color:white;
+  background: #2A8080;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.faq-answer p{
+  padding: 22px 10px 12px 10px;
+}
+.faq-answer.show {
+  max-height: 200px;
+}
+
 .contactUs-sec {
   padding: 108px;
   background: #333;
@@ -364,7 +379,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 37px 256px;
+  padding: 37px 0px;
   border-radius: 50px;
   background: #6ecb63;
 
@@ -376,10 +391,11 @@ p {
   text-align: center;
 }
 .contactUs-frame p {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .contactUS-sec-button {
-  width: 259px;
+  max-width: 259px;
+  min-width: 115px;
   height: 60px;
   padding: 4px;
   gap: 10px;
@@ -388,7 +404,7 @@ p {
   background: #ffd166;
   color: #2a8080;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 /*footer*/
 .footer {
@@ -463,6 +479,83 @@ p {
   display: none;
 }
 
+.product-tital-home{
+  font-size: 32px;
+  font-weight: 600;
+}
+ .product-img-div {
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+    }
+    .product-info-div{
+      margin: 24px 0px;
+    }
+
+    .product-image {
+      max-height: 279px;
+      margin-bottom: 15px;
+    }
+
+    .product-title {
+      font-weight: 600;
+      font-size: 1.125rem;
+    }
+
+    .product-info {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .btn-custom {
+      width: 193px;
+      height: 60px;
+      border-radius: 30px;
+      background: #2A8080;
+      color: #FFF;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 600;
+    }
+    .product-btns{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn-custom:hover {
+      background-color: #0c7d7d;
+    }
+
+    .view-details {
+     color: #2A8080;
+      font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+     
+      font-weight: 600;
+      color: #0e8f8f;
+    }
+
+    .view-more {
+      padding-top: 54px;
+      text-align: center;
+      
+      font-weight: 600;
+      font-size: 1.125rem;
+
+    }
+
+    .view-more a {
+      color: #0e8f8f;
+      text-decoration: none;
+    }
+
+    .view-more a:hover {
+      text-decoration: underline;
+    }
 /*scroll bar */
 @keyframes scrollLeft {
   0% {
@@ -475,6 +568,11 @@ p {
 
 /* Responsive */
 @media (max-width: 768px) {
+  #mainNav {
+    background-color: #e0f7f7;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+  }
   .navbar-nav {
     gap: 0;
   }
@@ -539,7 +637,7 @@ p {
     padding: 58px 9px;
   }
   .who-we-are-card h2 {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .who-we-are-card p {
     font-size: 12px;
@@ -552,7 +650,7 @@ p {
     display: block;
   }
   .heding-our-spl {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .card {
     display: flex;
@@ -578,7 +676,7 @@ p {
   }
   .btn-exp-pro {
     position: relative;
-    margin: 18px auto 0 auto !important;
+    margin: 1.125rem auto 0 auto !important;
     width: 188px;
     height: 40px;
     font-size: 14px;
@@ -602,7 +700,7 @@ p {
     text-align: center;
   }
   .text-area h6 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     padding-right: 60px;
   }
@@ -619,8 +717,13 @@ p {
   .sec4-hedding {
     font-size: 24px;
   }
-  .test-img-left {
-    margin-left: 30%;
+  .text-msg{
+    margin: 0;
+    font-size: 14px;
+  }
+  .testi-name{
+    font-size: 12px;
+    font-weight: 600;
   }
   .contactUs-sec {
     padding: 41px 21px;
@@ -628,8 +731,8 @@ p {
   .contactUs-frame {
     display: flex;
     height: 285px;
-    padding: 50px 0px;
     align-items: center;
+    text-align: center;
   }
   .border-md-end,
   .vertical-line {
@@ -661,6 +764,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 37px;
+    padding-top: 30px;
   }
   .footer-desktop {
     display: none;
@@ -669,7 +773,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 60px;
   }
   .footer-contact-mob p {
     text-align: center;
