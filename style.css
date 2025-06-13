@@ -32,7 +32,7 @@ body {
   color: #000;
 }
 .hero-sec {
-  min-height: 700px;
+  height: 700px;
   background-color: #2a8080;
   position: relative;
   color: white;
@@ -321,7 +321,7 @@ body {
   justify-content: flex-end;
   text-align: center;
 }
-.text-msg{
+.text-msg {
   margin: 25px;
 }
 .test-text2 {
@@ -333,12 +333,12 @@ body {
   justify-content: flex-end;
   text-align: center;
 }
- .testi-name{
-    font-weight: 600;
-  }
-  .faq-item{
-    width: 100%;
-  }
+.testi-name {
+  font-weight: 600;
+}
+.faq-item {
+  width: 100%;
+}
 .sec-faq {
   display: flex;
   flex-direction: column;
@@ -358,13 +358,13 @@ body {
   margin: 25px 0px;
 }
 .faq-answer {
-  color:white;
-  background: #2A8080;
+  color: white;
+  background: #2a8080;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
 }
-.faq-answer p{
+.faq-answer p {
   padding: 22px 10px 12px 10px;
 }
 .faq-answer.show {
@@ -479,83 +479,82 @@ body {
   display: none;
 }
 
-.product-tital-home{
+.product-tital-home {
   font-size: 32px;
   font-weight: 600;
 }
- .product-img-div {
-      border-radius: 20px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.25);
-    }
-    .product-info-div{
-      margin: 24px 0px;
-    }
+.product-img-div {
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+.product-info-div {
+  margin: 24px 0px;
+}
 
-    .product-image {
-      max-height: 279px;
-      margin-bottom: 15px;
-    }
+.product-image {
+  max-height: 279px;
+  margin-bottom: 15px;
+}
 
-    .product-title {
-      font-weight: 600;
-      font-size: 1.125rem;
-    }
+.product-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
 
-    .product-info {
-      font-size: 14px;
-      font-weight: 600;
-      margin-bottom: 5px;
-    }
+.product-info {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
 
-    .btn-custom {
-      width: 193px;
-      height: 60px;
-      border-radius: 30px;
-      background: #2A8080;
-      color: #FFF;
-      font-size: 1.125rem;
-      font-style: normal;
-      font-weight: 600;
-    }
-    .product-btns{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+.btn-custom {
+  width: 193px;
+  height: 60px;
+  border-radius: 30px;
+  background: #2a8080;
+  color: #fff;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+}
+.product-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .btn-custom:hover {
-      background-color: #0c7d7d;
-    }
+.btn-custom:hover {
+  background-color: #0c7d7d;
+}
 
-    .view-details {
-     color: #2A8080;
-      font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 600;
-     
-      font-weight: 600;
-      color: #0e8f8f;
-    }
+.view-details {
+  color: #2a8080;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
 
-    .view-more {
-      padding-top: 54px;
-      text-align: center;
-      
-      font-weight: 600;
-      font-size: 1.125rem;
+  font-weight: 600;
+  color: #0e8f8f;
+}
 
-    }
+.view-more {
+  padding-top: 54px;
+  text-align: center;
 
-    .view-more a {
-      color: #0e8f8f;
-      text-decoration: none;
-    }
+  font-weight: 600;
+  font-size: 1.125rem;
+}
 
-    .view-more a:hover {
-      text-decoration: underline;
-    }
+.view-more a {
+  color: #0e8f8f;
+  text-decoration: none;
+}
+
+.view-more a:hover {
+  text-decoration: underline;
+}
 /*scroll bar */
 @keyframes scrollLeft {
   0% {
@@ -717,11 +716,11 @@ body {
   .sec4-hedding {
     font-size: 24px;
   }
-  .text-msg{
+  .text-msg {
     margin: 0;
     font-size: 14px;
   }
-  .testi-name{
+  .testi-name {
     font-size: 12px;
     font-weight: 600;
   }
