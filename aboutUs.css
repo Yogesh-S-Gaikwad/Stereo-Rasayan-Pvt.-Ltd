@@ -30,6 +30,7 @@
   background: white;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin: 72px 0px 41px 0px;
 }
 .banner-sp1 {
