@@ -5,10 +5,11 @@
 }
 .con-frm{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 .contact-form input,textarea{
-    width: 100%;
+    width: 90%;
 }
 .contact-form-line{
     width: 1px;

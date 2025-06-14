@@ -14,3 +14,17 @@ window.onload = function () {
     answer.classList.toggle('show');
   };
 };
+ let count = 1;
+    const countSpan = document.getElementById('count');
+
+    function increment() {
+      count++;
+      countSpan.textContent = count;
+    }
+
+    function decrement() {
+      if (count > 1) {
+        count--;
+        countSpan.textContent = count;
+      }
+    }

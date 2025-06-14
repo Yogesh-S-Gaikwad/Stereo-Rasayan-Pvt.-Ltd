@@ -1,0 +1,7 @@
+.all-pro-div{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}.product-card{
+    margin: 10px;
+}
