@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css">
   </head>
   <body>
     <section class="sec-navbar">
@@ -64,40 +65,59 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">HomeYogesh</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
             <li class="nav-item">
               <a class="nav-link" href="aboutUs.html">About Us</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="38"
-                  height="12"
-                  viewBox="0 0 38 12"
-                  fill="none"
-                >
-                  <path
-                    d="M11.2654 1.56644H36.2654"
-                    stroke="#575757"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M2.26538 9.56644L36.2654 9.56644"
-                    stroke="#575757"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                  />
-                </svg>
+            <li class="nav-item"> 
+                  <a href="#" id="loginLink" class="nav-link">Login</a></li>
               </a>
             </li>
           </ul>
         </div>
       </nav>
+      <!-- Login Modal -->
+<div class="modal" id="loginModal" style="display: none;">
+  <div class="modal-content">
+    <span class="close" id="closeLogin">&times;</span>
+    <h3 class="loginHedding">Login</h3>
+
+    <!-- Error message block - only visible when URL has ?error=true -->
+    <div id="loginErrorMessage" style="display: none; color: red;">
+      Incorrect username or password. If you are new, please sign up first.
+    </div>
+
+    <form action="/login" method="post" class="form-login">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit" class="login-submit">Login</button>
+    </form>
+
+   <p style="margin-top: 10px;">
+      New user? <a href="#" id="showSignup">Sign Up</a>
+    </p>
+  </div>
+</div>
+
+<!-- Signup Modal -->
+<div class="modal" id="signupModal">
+  <div class="modal-content">
+    <span class="close" id="closeSignup">&times;</span>
+    <h3 class="loginHedding">Sign Up</h3>
+    <form action="/signup" method="post"class="form-login">
+      <input type="text" name="username" placeholder="Choose username" required />
+      <!-- <input type="text" name="wpNumber" placeholder="Enter Number" required /> -->
+      <input type="password" name="password" placeholder="Choose password" required />
+      <button type="submit" class="signupbtn">Sign Up</button>
+      <p style="margin-top: 10px;">
+        <a href="#" id="goToLogin">go to logIn</a>
+    </p>
+    </form>
+  </div>
+</div>
     </section>
     <section class="hero-sec d-flex align-items-center">
       <div class="hero-sec1 container">
